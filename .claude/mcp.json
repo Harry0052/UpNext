@@ -1,0 +1,49 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-playwright"],
+      "disabled": true,
+      "env": {}
+    },
+    "github": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-github"],
+      "disabled": true,
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "postgres": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-postgres"],
+      "disabled": true,
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL}"
+      }
+    },
+    "figma": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-figma"],
+      "disabled": true,
+      "env": {
+        "FIGMA_TOKEN": "${FIGMA_TOKEN}"
+      }
+    },
+    "sentry": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-sentry"],
+      "disabled": true,
+      "env": {
+        "SENTRY_AUTH_TOKEN": "${SENTRY_AUTH_TOKEN}",
+        "SENTRY_ORG": "${SENTRY_ORG}",
+        "SENTRY_PROJECT": "upnext"
+      }
+    }
+  }
+}
